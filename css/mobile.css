@@ -307,6 +307,7 @@ body {
   font-size: 14px;
   line-height: 22px;
 }
+
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
@@ -504,11 +505,78 @@ body {
   border-bottom: 3.7px solid #b59f5b;
 }
 
+.craft-item-card {
+  margin-bottom: 15%;
+}
+
+.craft-img {
+  width: 79%;
+  height: 85%;
+  margin-left: 10%;
+  object-fit: cover;
+}
+
+.craft-container {
+  padding: 5% 0 0;
+  width: 80%;
+  margin-left: 10%;
+  outline-offset: 20px;
+  outline: 3px solid #d3c59d;
+}
+
+.cradt-dscrt {
+  font-size: 15px;
+  margin-bottom: 7%;
+}
+
+.about-price {
+  display: flex;
+  margin-top: 5%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: OpenSans-Bold, sans-serif;
+}
+
+.in-shop {
+  width: 49%;
+  margin-right: 1%;
+  margin-top: 3%;
+  padding: 15px 0px;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #b59f5b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.old-price {
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-bottom: -10%;
+}
+
+.new-price {
+  font-size: 20px;
+}
+
+.craft-link {
+  color: #d3c59d;
+  text-decoration: none;
+}
+
+.craft-name {
+  font-size: 17px;
+  font-family: OpenSans-Bold, sans-serif;
+  text-transform: uppercase;
+}
+
 .footer {
   margin: 0 auto;
   margin-bottom: 75px;
   padding: 20px 0;
-  width: 1165px;
+  width: 90%;
   height: 42px;
   background-color: #f4f7f6;
   text-align: center;
@@ -534,15 +602,15 @@ body {
 }
 
 .social-network-twitter {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+  background-image: url(/svg/001-dribbble.svg);
 }
 
 .social-network-pinterest {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
+  background-image: url(/svg/001-pinterest.svg);
 }
 
 .social-network-tumblr {
-  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+  background-image: url(/svg/003-tumblr.svg);
 }
 
 .copyright {
