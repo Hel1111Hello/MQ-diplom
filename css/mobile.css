@@ -33,6 +33,12 @@ body {
   position: relative;
 }
 
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
 .header::before {
   content: '';
   display: block;
@@ -78,16 +84,16 @@ body {
 }
 
 .menu__button {
-  width: 1.4em;
-  height: 1em;  
+  width: 1em;
+  height: 0.6em;  
   border: none;
   padding: 0;
-
+  align-items: flex-end;
   background-color: transparent;
   font-size: 25px;
   position: relative;
-  left: 43%;
-  bottom: 15vh;
+  margin-right: 3%;
+  bottom: 15.5vh;
   text-indent: -9999px;
   cursor: pointer;
 }
@@ -95,7 +101,7 @@ body {
 .menu__button:before, .menu__button:after {
   content:"";
   width: 100%;
-  height: 20%;
+  height: 15%;
 
   background-color: #ffffff;  
 
@@ -104,7 +110,7 @@ body {
 }
 
 .menu__button:before {
-  top: 0;
+  top: -3px;
 }
 
 .menu__button:after {
@@ -113,7 +119,7 @@ body {
 
 .menu__button-label {
   width: 100%;
-  height: 20%;
+  height: 15%;
   margin-top: -0.1em;  
 
   background-color: #ffffff;  
@@ -149,9 +155,21 @@ body {
   margin-bottom: 8.5%;
 }
 
+.trend-article {
+  width: 100%;
+  display: block;
+  /* gap: 100px; */
+}
+
+.trends-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
 .trend-container {
   padding: 23% 1% 5% 4%;
-  margin-bottom: 1%;
+  /* margin-bottom: 1%; */
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -235,6 +253,9 @@ body {
 .post {
   background-color: #fff;
   width: 100%;
+}
+
+.post:nth-child(n + 2) {
   margin-top: 10%;
 }
 
@@ -316,17 +337,9 @@ body {
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------------------*/
-.sidebar {
-  margin-left: 4.5%;
-}
-
-.widget {
-  margin-bottom: 12%;
-}
-
-.widget-title {
+/* Общие стили */
+.widget-title, .our-craft {
   font-size: 16px;
-
   margin-bottom: 10px;
   text-transform: uppercase;
   font-family: OpenSans-Bold, sans-serif;
@@ -334,12 +347,38 @@ body {
   padding-bottom: 11px;
 }
 
-.widget-title::after {
-  content:'';
+.widget-title::after, .our-craft::after {
+  content: '';
   display: block;
   width: 65px;
   margin: 8px auto;
   border-bottom: 3.7px solid #b59f5b;
+}
+
+.input-field, .input-email {
+  width: 77%;
+  border: 0px solid #ddd;
+  background-color: #f4f7f6;
+  outline: none;
+}
+
+.button-subscribe, .in-shop {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: #b59f5b;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Уникальные стили */
+.sidebar {
+  margin-left: 4.5%;
+}
+
+.widget {
+  margin-bottom: 12%;
 }
 
 .widget-post {
@@ -400,7 +439,6 @@ body {
   content: "";
   display: inline-block;
   vertical-align: middle;
-  
   width: 20px;
   height: 20px;
   background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
@@ -471,7 +509,6 @@ body {
   margin-top: -6.5%;
 }
 
-
 .tags-list-item {
   background-color: white;
   border: 3px solid #eeeeee; 
@@ -485,24 +522,6 @@ body {
 .tags-list-link {
   color: black;
   text-decoration: none;
-}
-
-.our-craft {
-  font-size: 16px;
-
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  font-family: OpenSans-Bold, sans-serif;
-  text-align: center;
-  padding-bottom: 11px;
-}
-
-.our-craft::after {
-  content:'';
-  display: block;
-  width: 65px;
-  margin: 8px auto;
-  border-bottom: 3.7px solid #b59f5b;
 }
 
 .craft-item-card {
@@ -602,15 +621,15 @@ body {
 }
 
 .social-network-twitter {
-  background-image: url(/svg/001-dribbble.svg);
+  background-image: url("/svg/001-dribbble.svg");
 }
 
 .social-network-pinterest {
-  background-image: url(/svg/001-pinterest.svg);
+  background-image: url("/svg/001-pinterest.svg");
 }
 
 .social-network-tumblr {
-  background-image: url(/svg/003-tumblr.svg);
+  background-image: url("/svg/003-tumblr.svg");
 }
 
 .copyright {
