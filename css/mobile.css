@@ -17,6 +17,128 @@ body {
   src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
 }
 
+.popup-state {
+  display: none;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.popup-content {
+  position: relative;
+  background: #fff;
+  width: 40vw;
+  min-width: 300px;
+  max-width: 360px;
+  height: 480px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.popup-state:checked + .popup {
+  display: flex;
+}
+
+.popup-close {
+  position: absolute;
+  top: -50px;
+  right: 0px;
+
+  color: #fff;
+  cursor: pointer;
+  
+  text-align: center;
+  font-size: 50px;
+}
+
+.question {
+  display: block;
+}
+
+.choose-option {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 42px;
+  
+  padding-left: 10px;
+  padding-right: 25px;
+  
+  margin: 0;
+  
+  border: 0px solid #ddd;
+  background-color: #f4f7f6;
+  border-right: none;
+  outline: none;
+  
+  color: #707171;
+  font-size: 12px;
+  
+  background-image: url("/svg/form-arrows.svg");
+	background-repeat: no-repeat;
+	background-position: right 5px center;
+  background-size: 10px;
+
+  -webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.preferences {
+  margin-top: 5%;
+}
+
+.choose:nth-child(3) {
+  margin-left: 15px;
+}
+
+.email-area {
+  margin-top: 5%;
+}
+
+.radio-check {
+  appearance: none;
+}
+
+.radio-text::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1%;
+  width: 19px;
+  height: 19px;
+  background-image: url("/svg/form-empty-circle.svg");
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.radio-check:checked ~ .radio-text::before {
+  background-image: url("/svg/form-circle.svg");
+}
+
+.text-area {
+  resize: none;
+  width: 95%;
+  height: 130px;
+  background-color: #f4f7f6;
+  border: none;
+  padding-left: 19px;
+  padding-top: 19px;
+  color: #707171;
+  font-size: 13px;
+  font-family: OpenSans-Regular, sans-serif;
+}
+
 .header {
   height: 37.9vh;
   display: flex;
@@ -128,14 +250,7 @@ body {
   left: 0;
   top: 50%;
 }
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
+
 .container {
   margin-top: 11%;
 }
@@ -158,7 +273,6 @@ body {
 .trend-article {
   width: 100%;
   display: block;
-  /* gap: 100px; */
 }
 
 .trends-gallery {
@@ -169,7 +283,6 @@ body {
 
 .trend-container {
   padding: 23% 1% 5% 4%;
-  /* margin-bottom: 1%; */
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -329,16 +442,8 @@ body {
   line-height: 22px;
 }
 
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/* Общие стили */
-.widget-title, .our-craft {
+
+.widget-title, .our-craft, .header-popup {
   font-size: 16px;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -347,7 +452,7 @@ body {
   padding-bottom: 11px;
 }
 
-.widget-title::after, .our-craft::after {
+.widget-title::after, .our-craft::after, .header-popup::after {
   content: '';
   display: block;
   width: 65px;
@@ -372,7 +477,6 @@ body {
   cursor: pointer;
 }
 
-/* Уникальные стили */
 .sidebar {
   margin-left: 4.5%;
 }
@@ -441,7 +545,7 @@ body {
   vertical-align: middle;
   width: 20px;
   height: 20px;
-  background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
+  background-image: url("/svg/search.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 20px;
@@ -482,7 +586,7 @@ body {
   outline: none;
 }
 
-.button-subscribe {
+.button-subscribe, .popup-button {
   width: 95%;
   padding: 15px 0px;
   margin-top: 20px;
@@ -493,6 +597,10 @@ body {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+.popup-button {
+  width: 100%;
 }
 
 .tags-list {
@@ -531,7 +639,7 @@ body {
 .craft-img {
   width: 79%;
   height: 85%;
-  margin-left: 10%;
+  margin-left: 3%;
   object-fit: cover;
 }
 

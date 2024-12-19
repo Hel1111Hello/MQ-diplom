@@ -1,16 +1,10 @@
 .header {
-    height: 17.5vh;
+    height: 320px;
     display: block;
     flex-direction: row;
     background-image: url("../images/banner-bg-tablet.jpg");
     text-align: center;
 }
-
-/* .nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-} */
 
 .logo-img {
     width: 70%;
@@ -24,16 +18,14 @@
 
 .menu-logo {
     margin-right: 67%;
-    /* position: relative;
-    align-items: flex-start;
-    justify-content: flex-start; */
 }
 
 .header-title {
-    /* margin: auto auto; */
-    /* width: 679px; */
+    margin: auto auto;
+    width: 679px;
+    
     position: relative;
-    top: 4.1vh;
+    top: 2.3em;
     font-size: 39px;
     line-height: 50px;
     letter-spacing: 0.3px;
@@ -41,7 +33,6 @@
 
 .header-menu {
     position: relative;
-    /* display: flex; */
     align-items: center;
     justify-content: center;
 }
@@ -49,80 +40,22 @@
 .menu__button {
     width: 1em;
     height: 0.6em;  
-    /* border: none;
-    padding: 0;
-    align-items: flex-end;
-    background-color: transparent;
-    font-size: 25px;
-    position: relative; */
     top:30%;
     right: 110%;
-    /* bottom: 15.5vh; */
-    /* text-indent: -9999px;
-    cursor: pointer; */
 }
 
 .menu__button:before, .menu__button:after {
-    /* content:"";
-    width: 100%; */
     height: 15%;
-
-    /* background-color: red;  
-
-    position: absolute;
-    left: 0; */
 }
-
-/* .menu__button:before {
-    top: -3px;
-}
-
-.menu__button:after {
-    bottom: 0;
-} */
 
 .menu__button-label {
-    /* width: 100%; */
     height: 15%;
-    /* margin-top: -0.1em;  
-
-    background-color: red;  
-
-    position: absolute;
-    left: 0;
-    top: 50%; */
 }
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
+
 .container {
     margin-top: 5%;
     display: flex;
 }
-
-/* .trends-header {
-    font-size: 16px;
-    margin-top: -2px;
-    margin-bottom: 10px;
-    margin-left: 1px;
-    text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
-    text-align: center;
-    padding-bottom: 11px;
-} */
-
-/* .trends-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3px;
-    align-items: stretch;
-    justify-content: space-between;
-} */
 
 .trend-article {
     width: 49.8%;
@@ -132,88 +65,9 @@
     margin-bottom: 0%;
 }
 
-/* .trend-container {
-    padding: 23% 1% 5% 0;
-    margin-bottom: 1%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: relative;
-
-} */
-
-/* .trend-container::before {
-    content: '';
-    display: block;
-
-    position: absolute;
-    background-color: #000;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-
-    opacity: 0.6;
-    z-index: 1;
-} */
-
-/* .trand-1 {
-    background-image: url("../images/trend1.jpg");
-}
-
-.trand-2 {
-    background-image: url("../images/trend2.jpg");
-}
-
-.trand-3 {
-    background-image: url("../images/trend3.jpg");
-}
-
-.trand-4 {
-    background-image: url("../images/trend4.jpg");
-} */
-
 .trends-content {
     margin-top: 6%;
 } 
-
-/*.trend-content {
-    padding: 8% 10% 8% 5%;
-    width: 80%;
-    border: #b59f5b solid 3px;
-    z-index: 2;
-    position: relative;
-}
-
-.trends-header::after {
-    content:'';
-    display: block;
-    width: 65px;
-    margin: 8px auto;
-    border-bottom: 3.7px solid #b59f5b;
-}
-
-.trend-name {
-    line-height: 17px;
-}
-
-.trend-link {
-    text-decoration: none;
-
-    color: #fff;
-    text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
-    font-size: 16px;
-}
-
-.tegs_item_link {
-    color: #b59f5b;
-    margin-left: 2px;
-    font-family: OpenSans-Bold, sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    text-decoration: none;
-} */
 
 .post {
     margin-left: 3%;
@@ -224,121 +78,43 @@
   }
 
 .post::after {
-    /* content:'';
-    display: block; */
     width: 75%;
-    /* margin: 4% 4%;
-    border-bottom: 3.7px solid #292928; */
+    margin: 4% 4%;
 }
 
 .post-tags-item {
-    /* font-family: OpenSans-Bold, sans-serif;
-    text-transform: uppercase;
-    display: inline; */
     font-size: 13px;
 }
-
-/* .post-tags-item:nth-child(n+2) {
-    padding-left: 12px;
-} */
-
-/* .post-tags-link {
-    color: #b59f5b;
-    text-decoration: none;
-} */
 
 .post-img {
     width: 75%;
     height: 75%;
-    /* margin-left: 7%; */
-    /* object-fit: cover; */
 }
 
 .post-content {
-    /* margin-left: 5%; */
     margin-top: 2%;
     width: 76%;
 }
 
-/* .post-description {
-    font-family: OpenSans-Bold, sans-serif;
-    text-transform: uppercase;
-    font-size: 14px;
-    word-spacing: 18px;
-    color: #b59f5b;
-} */
-
 .post-title {
     font-size: 17px;
     margin-top: 1%;
-    /* font-family: OpenSans-Bold, sans-serif;
-    text-transform: uppercase; */
 }
 
 .post-meta {
     margin-top: 6%;
     margin-bottom: 8%;
-    /* font-size: 12px; */
 }
 
-/* .post-date {
-    color: #888;
-}
-
-.post-autor {
-    font-family: OpenSans-Bold, sans-serif; 
-} */
 
 .post-article {
     margin-bottom: 3%;
-    /* font-size: 14px; */
-    /* line-height: 22px; */
 }
-
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------*/
-
-/* .widget-title, .our-craft {
-    font-size: 16px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-family: OpenSans-Bold, sans-serif;
-    text-align: center;
-    padding-bottom: 11px;
-} */
-
-/* .widget-title::after, .our-craft::after {
-    content: '';
-    display: block;
-    width: 65px;
-    margin: 8px auto;
-    border-bottom: 3.7px solid #b59f5b;
-} */
 
 .input-field, .input-email {
     width: 77%;
-/* border: 0px solid #ddd;
-background-color: #f4f7f6;
-outline: none; */
 }
 
-.button-subscribe, .in-shop {
-font-family: OpenSans-Bold, sans-serif;
-font-size: 14px;
-text-transform: uppercase;
-background-color: #b59f5b;
-color: white;
-border: none;
-cursor: pointer;
-}
-
-/* Уникальные стили */
 .sidebar {
 margin-left: -7.5%;
 }
@@ -347,157 +123,22 @@ margin-left: -7.5%;
 margin-bottom: 18%;
 }
 
-/* .widget-post {
-display: flex;
-margin-bottom: 22px;
-}
-
-.widget-post-img {
-width: 70px;
-height: 70px;
-}
-
-.post-info {
-flex: 1;
-margin-left: 19px;
-} */
-
-/* .post-title-link {
-color: black;
-text-decoration: none;
-}
-
-.post-info-date {
-margin-top: -4px;
-display: block;
-font-size: 12px;
-color: #999;
-}
-
-.post-info-description {
-margin: 0px;
-font-family: OpenSans-Bold, sans-serif;
-font-size: 14px;
-text-transform: uppercase;
-color: #333;
-} */
-
 .input-field {
-margin-top: 12%;
-/* padding: 16px 0 16px 5%; */
-width: 68%;
-/* border: 0px solid #ddd;
-background-color: #f4f7f6;
-border-right: none;
-outline: none; */
+    margin-top: 12%;
+    width: 68%;
 }
-
-/* .search-batton {
-padding: 14px 14px;
-margin-left: -6px;
-background-color: #b59f5b;
-color: white;
-border: none;
-cursor: pointer;
-}
-
-.search-batton::before {
-content: "";
-display: inline-block;
-vertical-align: middle;
-width: 20px;
-height: 20px;
-background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/search.svg");
-background-repeat: no-repeat;
-background-position: center center;
-background-size: 20px;
-}
-
-.widget-list {
-list-style: none;
-margin-top: -5px;
-}
-
-.widget-list-item {
-margin-bottom: 13px;
-padding-bottom: 10px;
-font-family: OpenSans-Bold, sans-serif;
-border-bottom: 1px solid #ddd;
-font-size: 14px;
-} */
-
-/* .widget-list-link {
-color: black;
-text-decoration: none;
-}
-
-.text-degree {
-vertical-align: super;
-margin-left: 3px;
-color: #b59f5b;
-font-size: 12px;
-} */
-
-/* .input-email {
-margin-top: -5px;
-padding: 16px;
-width: 77%;
-border: 0px solid #ddd;
-background-color: #f4f7f6;
-border-right: none;
-outline: none;
-} */
 
 .button-subscribe {
-width: 88%;
-/* padding: 15px 0px;
-margin-top: 20px;
-font-family: OpenSans-Bold, sans-serif;
-font-size: 14px;
-text-transform: uppercase;
-background-color: #b59f5b;
-color: white;
-border: none;
-cursor: pointer; */
+    width: 88%;
 }
-
-/* .tags-list {
-display: flex;
-flex-wrap: wrap;
-position: relative;
-list-style: none;
-font-family: OpenSans-Bold, sans-serif;
-top: -10px;
-right: 2px;
-}
-
-.widget-themes {
-margin-top: -6.5%;
-}
-
-.tags-list-item {
-background-color: white;
-border: 3px solid #eeeeee; 
-border-radius: 5px;
-padding: 5px 13px;
-margin: 0 3px 5px 3px;
-font-size: 12px;
-text-transform: uppercase;
-} */
 
 .shop-container {
     display: flex;
     flex-wrap: wrap;
 }
 
-.tags-list-link {
-color: black;
-text-decoration: none;
-}
-
 .craft-item-card {
     margin-bottom: 7%;
-    /* background-color: red; */
     width: 48%;
     margin-left: 2%;
 }
@@ -508,116 +149,6 @@ text-decoration: none;
 
 
 .craft-img {
-width: 290px;
-height: 230px;
-margin-left: 11%;
-object-fit: cover;
-}
-
-.craft-container {
-padding: 5% 0 0;
-width: 80%;
-margin-left: 10%;
-outline-offset: 20px;
-outline: 3px solid #d3c59d;
-}
-
-.cradt-dscrt {
-font-size: 15px;
-margin-bottom: 7%;
-}
-
-.about-price {
-display: flex;
-margin-top: 5%;
-justify-content: space-between;
-align-items: center;
-font-family: OpenSans-Bold, sans-serif;
-}
-
-.in-shop {
-width: 49%;
-margin-right: 1%;
-margin-top: 3%;
-padding: 15px 0px;
-font-family: OpenSans-Bold, sans-serif;
-font-size: 14px;
-text-transform: uppercase;
-background-color: #b59f5b;
-color: white;
-border: none;
-cursor: pointer;
-}
-
-.old-price {
-text-decoration: line-through;
-font-size: 14px;
-margin-bottom: -10%;
-}
-
-.new-price {
-font-size: 20px;
-}
-
-.craft-link {
-color: #d3c59d;
-text-decoration: none;
-}
-
-.craft-name {
-font-size: 17px;
-font-family: OpenSans-Bold, sans-serif;
-text-transform: uppercase;
-} 
-
-.footer {
-margin: 0 auto;
-margin-bottom: 75px;
-padding: 20px 0;
-width: 90%;
-height: 42px;
-background-color: #f4f7f6;
-text-align: center;
-}
-
-.social-network-list {
-margin-left: 10px;
-list-style: none;
-}
-
-.social-network-icon {
-display: block;
-width: 24px;
-height: 24px;
-background-repeat: no-repeat;
-background-position: center center;
-background-size: 20px;
-}
-
-.social-network-list-items {
-display: inline-block;
-margin: 10px 9px;
-}
-
-/*.social-network-twitter {
-background-image: url("/svg/001-dribbble.svg");
-}
-
-.social-network-pinterest {
-background-image: url("/svg/001-pinterest.svg");
-}
-
-.social-network-tumblr {
-background-image: url("/svg/003-tumblr.svg");
-} */
-
-.copyright {
-font-family: OpenSans-Bold, sans-serif;
-font-size: 12px;
-text-align: center;
-}
-
-.copyright-text {
-margin-left: 10px;
-color:#999999;
+    width: 80%;
+    height: 54%;
 }
