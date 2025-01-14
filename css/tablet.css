@@ -1,154 +1,163 @@
 .header {
-    height: 320px;
-    display: block;
-    flex-direction: row;
+    margin-bottom: 46px;
+    padding-top: 42px;
+    padding-bottom: 114px;
     background-image: url("../images/banner-bg-tablet.jpg");
-    text-align: center;
-}
-
-.logo-img {
-    width: 70%;
-}
-
-.navigation-bar {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
-}
-
-.menu-logo {
-    margin-right: 67%;
-}
-
-.header-title {
-    margin: auto auto;
-    width: 679px;
-    
-    position: relative;
-    top: 2.3em;
-    font-size: 39px;
-    line-height: 50px;
-    letter-spacing: 0.3px;
-}
-
-.header-menu {
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.menu__button {
-    width: 1em;
-    height: 0.6em;  
-    top:30%;
-    right: 110%;
-}
-
-.menu__button:before, .menu__button:after {
-    height: 15%;
-}
-
-.menu__button-label {
-    height: 15%;
-}
-
-.container {
-    margin-top: 5%;
-    display: flex;
-}
-
-.trend-article {
-    width: 49.8%;
-}
-
-.content {
-    margin-bottom: 0%;
-}
-
-.trends-content {
-    margin-top: 6%;
-} 
-
-.post {
-    margin-left: 3%;
-}
-
-.post:nth-child(n + 2) {
-    margin-top: 8%;
   }
 
-.post::after {
-    width: 75%;
-    margin: 4% 4%;
-}
+  .container {
+    max-width: 1170px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 
-.post-tags-item {
-    font-size: 13px;
-}
+  .navigation-bar {
+    margin-bottom: 80px;
+  }
 
-.post-img {
-    width: 75%;
-    height: 75%;
-}
+  .logo {
+    width: 158px;
+  }
 
-.post-content {
-    margin-top: 2%;
-    width: 76%;
-}
+  .header-title {
+    font-size: 40px;
+    line-height: 1.4;
+  }
 
-.post-title {
+  .menu-burger {
+    display: block;
+    position: relative;
+    width: 23px;
+    height: 19px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-burger::before,
+  .menu-burger::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: #ffffff;
+  }
+
+  .menu-burger::before {
+    top: 0;
+  }
+
+  .menu-burger::after {
+    bottom: 0;
+  }
+
+  .mebu-burger-label {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .trend-title {
+    margin-bottom: 19px;
+    font-size: 18px;
+  }
+
+  .trends-content {
+    margin-bottom: 46px;
+  }
+
+  .trend-article {
+    width: calc(50% - 4px);
+    min-height: 248px;
+  }
+
+  .trend-content {
+    padding: 28px;
+  }
+
+  .trend-post-title {
     font-size: 17px;
-    margin-top: 1%;
-}
+  }
 
-.post-meta {
-    margin-top: 6%;
-    margin-bottom: 8%;
-}
+  .inner {
+    margin-bottom: 50px;
+  }
 
+  .content {
+    width: calc(100% - 25px - 272px);
+    margin-right: 25px;
+  }
 
-.post-article {
-    margin-bottom: 3%;
-}
+  .post {
+    flex-direction: column;
+    border-bottom: 3px solid #eeeeee;
+    margin-bottom: 41px;
+  }
 
-.input-field, .input-email {
-    width: 77%;
-}
+  .post:last-child {
+    border: none;
+  }
 
-.sidebar {
-margin-left: -7.5%;
-}
+  .post-img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 
-.widget {
-margin-bottom: 18%;
-}
+  .post-content {
+    width: 100%;
+    margin-bottom: 16px;
+  }
 
-.input-field {
-    margin-top: 12%;
-    width: 68%;
-}
+  .post-title {
+    font-size: 17px;
+  }
 
-.button-subscribe {
-    width: 88%;
-}
+  .post-meta {
+    margin-bottom: 36px;
+  }
 
-.shop-container {
-    display: flex;
-    flex-wrap: wrap;
-}
+  .sidebar {
+    width: 272px;
+  }
 
-.craft-item-card {
-    margin-bottom: 7%;
-    width: 48%;
-    margin-left: 2%;
-}
+  .shop-title {
+    font-size: 17px;
+  }
 
-.craft-item-card:nth-child(2n) {
-    margin-left: -1%;
-}
+  .shop-container {
+    gap: 28px 22px;
+    margin-bottom: 50px;
+  }
 
+  .shop-item {
+    width: calc((100% - 22px) / 2);
+  }
 
-.craft-img {
-    width: 80%;
-    height: 54%;
-}
+  .shop-item-title {
+    font-size: 17px;
+  }
+
+  .social-network-list{
+    margin-bottom: 50px;
+  }
+
+  .copyright {
+    margin-bottom: 37px;
+  }
+
+  .popup-box {
+    max-width: 380px;
+  }
+
+  .feedback {
+    margin: 40px 25px;
+  }
